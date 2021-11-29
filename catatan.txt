@@ -1,0 +1,10 @@
+#Section 10: File/Image Upload | 211. Setup
+    - npm install 
+    - mongodb atlas :
+        click connect -> connect your aplication (baris ke 2) -> copy aplication code:
+                                            mongodb+srv://ujang:<password>@nodeexpressproject.kfzgl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+                    paste pada file .env kemudia setup seperti ini:
+                        MONGO_URI=mongodb+srv://ujang:admin0k8@nodeexpressproject.kfzgl.mongodb.net/07-FILE-UPLOAD?retryWrites=true&w=majority
+    
+    - npm start
+    - http://localhost:3000/
