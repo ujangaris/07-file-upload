@@ -37,7 +37,7 @@
                     {
                         "msg": "Path `image` is required."
                     }
-                    
+
             #Success
             POST {{URL}}/products
                 body -> raw -> json:
@@ -54,3 +54,13 @@
                             "__v": 0
                         }
                     }
+
+#Section 10: File/Image Upload | 216. Upload Image - Postman
+    Pengujian pada Postman:
+        Upload Image
+        POST {{URL}}/products/uploads
+            form-data -> file -> select file
+            image               computer-6.jpeg
+        
+        hasil response: upload product Image
+        cek pada terminal.
