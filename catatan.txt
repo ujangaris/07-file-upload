@@ -160,3 +160,18 @@
                     }
                 }
         buka pada browser: https://res.cloudinary.com/bukakelas/image/upload/v1638272727/file-upload/tmp-1-1638272724604_mtx0jy.jpg
+
+#Section 10: File/Image Upload | 223. Remove Template Files 
+    hapus semua file yang berada pada folder temp, kemudian coba lakukan pengujian kembali pada postman:
+            Upload Image
+            POST {{URL}}/products/uploads
+                form-data -> file -> select file
+                image               computer-1.jpeg
+            
+            hasil response: 
+                {
+                    "image": {
+                        "src": "https://res.cloudinary.com/bukakelas/image/upload/v1638272727/file-upload/tmp-1-1638272724604_mtx0jy.jpg"
+                    }
+                }
+    pada browser: pada web cloudinary buka file-upload(tempat menyimpan gambar dalam cloud kita)
