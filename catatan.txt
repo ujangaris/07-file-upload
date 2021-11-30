@@ -10,3 +10,5 @@
     - http://localhost:3000/
 
 #Section 10: File/Image Upload | 212. Product Model
+
+#Section 10: File/Image Upload | 213. Basic Structure
