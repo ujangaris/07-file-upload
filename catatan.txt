@@ -138,3 +138,9 @@
             {
                 "msg": "Please Upload Image smaller 1KB"
             }
+
+#Section 10: File/Image Upload | 220. Cloudinary Intro
+    lakukan signup: https://cloudinary.com/
+
+#Section 10: File/Image Upload | 221.Cloudinary Setup
+    Documentation: https://www.npmjs.com/package/cloudinary
