@@ -23,3 +23,34 @@
 
         Upload Image
             POST {{URL}}/products/uploads
+
+#Section 10: File/Image Upload | 215. Create Product(Fail)
+    Pengujian pada postman:
+        Create Product:
+            #Fail
+            POST {{URL}}/products
+                body -> raw -> json:
+                    {
+                        "name": "product name","price":300
+                    }
+                hasil response:
+                    {
+                        "msg": "Path `image` is required."
+                    }
+                    
+            #Success
+            POST {{URL}}/products
+                body -> raw -> json:
+                    {
+                        "name": "product name","price":300, "image":"123"
+                    }
+                hasil response: 
+                    {
+                        "product": {
+                            "_id": "61a5e89aadc8f71596df9848",
+                            "name": "product name",
+                            "price": 300,
+                            "image": "123",
+                            "__v": 0
+                        }
+                    }
