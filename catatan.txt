@@ -64,3 +64,22 @@
         
         hasil response: upload product Image
         cek pada terminal.
+
+#Section 10: File/Image Upload | 217. EXPRESS-FILEUPLOAD Package
+    Documentation: https://www.npmjs.com/package/express-fileupload
+
+    Pengujian pada Postman:
+        Upload Image
+        POST {{URL}}/products/uploads
+            form-data -> file -> select file
+            image               computer-1.jpeg
+        
+        hasil response: 
+            {
+                "image": {
+                    "src": "/uploads/computer-1.jpeg"
+                }
+            }
+            
+        untuk melihat hasil pada browser , copy hasil src dan tambahkan seperti dibawah ini:
+            http://localhost:3000/uploads/computer-1.jpeg
