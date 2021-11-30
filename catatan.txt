@@ -12,3 +12,14 @@
 #Section 10: File/Image Upload | 212. Product Model
 
 #Section 10: File/Image Upload | 213. Basic Structure
+
+#Section 10: File/Image Upload | 214. Postman Setup
+    07-file-upload:
+        Create Product
+            POST {{URL}}/products
+
+        Get All Products
+            GET {{URL}}/products
+
+        Upload Image
+            POST {{URL}}/products/uploads
