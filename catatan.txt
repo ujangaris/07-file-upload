@@ -80,6 +80,26 @@
                     "src": "/uploads/computer-1.jpeg"
                 }
             }
-            
+
         untuk melihat hasil pada browser , copy hasil src dan tambahkan seperti dibawah ini:
             http://localhost:3000/uploads/computer-1.jpeg
+
+#Section 10: File/Image Upload | 218. Complete File Upload
+    Pengujian pada Postman:
+        Create Product
+        POST {{URL}}/products
+            {
+                "name": "product 4","price":600, "image":"/uploads/computer-4.jpeg"
+            }
+        hasil response: 
+            {
+                "product": {
+                    "_id": "61a5f113798f5c1e21eccf19",
+                    "name": "product 4",
+                    "price": 600,
+                    "image": "/uploads/computer-4.jpeg",
+                    "__v": 0
+                }
+            }
+
+            pada browser : http://localhost:3000
