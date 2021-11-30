@@ -144,3 +144,19 @@
 
 #Section 10: File/Image Upload | 221.Cloudinary Setup
     Documentation: https://www.npmjs.com/package/cloudinary
+
+#Section 10: File/Image Upload | 222. Upload Image to Cloudinary
+    Pengujian pada Postman:
+        #pengujian 1
+            Upload Image
+            POST {{URL}}/products/uploads
+                form-data -> file -> select file
+                image               computer-1.jpeg
+            
+            hasil response: 
+                {
+                    "image": {
+                        "src": "https://res.cloudinary.com/bukakelas/image/upload/v1638272727/file-upload/tmp-1-1638272724604_mtx0jy.jpg"
+                    }
+                }
+        buka pada browser: https://res.cloudinary.com/bukakelas/image/upload/v1638272727/file-upload/tmp-1-1638272724604_mtx0jy.jpg
