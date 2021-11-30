@@ -103,3 +103,38 @@
             }
 
             pada browser : http://localhost:3000
+
+#Section 10: File/Image Upload | 219. Additional Checks
+    Pengujian pada Postman:
+        #pengujian 1
+            Upload Image
+            POST {{URL}}/products/uploads
+                form-data -> file -> select file
+                image               <kosongkan file>
+            
+            hasil response: 
+            {
+                "msg": "No File Uploaded"
+            }
+
+        #pengujian 2
+            Upload Image
+            POST {{URL}}/products/uploads
+                form-data -> file -> select file
+                image               <masukan Document>
+            
+            hasil response: 
+            {
+                "msg": "Please Upload Image"
+            }
+
+        #pengujian 3
+            Upload Image
+            POST {{URL}}/products/uploads
+                form-data -> file -> select file
+                image               <masukan gambar yang besar>
+            
+            hasil response: 
+            {
+                "msg": "Please Upload Image smaller 1KB"
+            }
